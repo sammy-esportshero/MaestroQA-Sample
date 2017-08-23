@@ -1,0 +1,155 @@
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: #1b2224;
+  margin: 0;
+  line-height: 1.43;
+}
+
+.container {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.sidebar {
+  height: 100%;
+  min-width: 200px;
+  color: #596468;
+}
+
+.compose-btn {
+  display: flex;
+  background-color: #ce5135;
+  border: none;
+  border-radius: 3px;
+  padding: 0.8em 3em;
+  color: #fff;
+  margin: 3.5em auto;
+  margin-bottom: 2.5em;
+  font-size: 1.05em;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+.email-panel {
+  padding: 3em 4em;
+  flex-grow: 1;
+  max-width: 600px;
+  background-color: #fff;
+}
+
+.email-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-header {
+  font-weight: lighter;
+  font-size: 3em;
+  margin: 0;
+  color: #444;
+}
+
+.email-list {
+  margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid #e9eff0;
+}
+
+.email-item {
+  border-bottom: 1px solid #e9eff0;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.meta-data {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  opacity: 0.5;
+}
+
+.email-search{
+  text-align:right;
+  padding:6px;
+  padding-right:10px;
+  border: 1px solid #DDDDDD;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #DDDDDD;
+}
+
+.email-search::-webkit-input-placeholder {
+  color: #DDDDDD;
+}
+
+.email-search:-moz-placeholder { /* Firefox 18- */
+  color: #DDDDDD;
+}
+
+.email-search::-moz-placeholder {  /* Firefox 19+ */
+  color: #DDDDDD;
+}
+
+.email-search:-ms-input-placeholder {
+  color: #DDDDDD;
+}
+
+.sidebar-divider{
+  margin-top: 30px;
+  padding-top: 25px;
+  padding-bottom:10px;
+  padding-left:10px;
+  font: 12px consolas;
+  font-weight: bold;
+  color: #30373A;
+  border-top:1px solid #30373A;
+}
+
+.sidebar-notification{
+  text-align:center;
+  vertical-align:middle;
+  width: 18px;
+  height: 18px;
+  padding: 1px;
+  position: relative;
+  font-size:8px;
+  border-radius:50%;
+  border: 1px solid #596468;
+  line-height:18px;
+}
+.sidebar-icon{
+  padding-right:10px;
+}
+
+.sidebar-item{
+  display:flex;
+  padding-top: 10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  font-weight: bold;
+  width:190px;
+}
+
+.sidebar-middle{
+  width:130px;
+  vertical-align:middle;
+}
+
+.sidebar-item:hover{
+  background-color:#FFFFFF;
+  border-left: 2px solid #ce5135;
+}
+.sidebar-item:hover .sidebar-notification{
+  background-color: #ce5135;
+  border: 1px solid #ce5135;
+  color: white;
+}
