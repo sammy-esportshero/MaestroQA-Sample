@@ -49,7 +49,7 @@ function getFilteredEmails(allEmails = [], searchInputs = getSearchInputs()) {
         return false;
     }
 
-    //Filter the emails to find one that has a value that contains one of the search inputs
+    //Filter the emails to find those that have any value that contains one of the search inputs
     return $.grep(allEmails, function(email) {
         return (Object.values(email).find(containsSearchInput)||false);
     });
